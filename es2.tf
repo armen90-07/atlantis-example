@@ -12,7 +12,7 @@ terraform {
 variable "ami" {
   type = string
   description = "ami id"
-  default = "ami-09042b2f6d07d164a"
+  default = "ami-00b696228b0185ffe"
 }
 
 resource "aws_instance" "my-instance" {
