@@ -1,3 +1,7 @@
+provider "aws" {
+  region = "eu-central-1"
+}
+
 terraform {
   required_version = ">= 0.14"
   required_providers {
@@ -11,7 +15,7 @@ terraform {
 variable "ami" {
   type = string
   description = "ami id"
-  default = "ami-00b696228b0185ffe"
+  default = "ami-0caef02b518350c8b"
 }
 
 resource "aws_instance" "my-instance12" {
